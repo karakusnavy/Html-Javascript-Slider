@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slider Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            height: 450px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+
+        }
+
+        .slider {
+            height: 400px;
+            width: 1000px;
+            ;
+            border: 4px solid rgba(0, 124, 182, 0.521);
+            background-image: url(BG.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 0px 1px 3px black;
+        }
+
+        input {
+            border: none;
+            background: rgb(166, 227, 255);
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        input:hover {
+            background: white;
+            color: black;
+            transition: 0.4s;
+        }
+
+        button {
+            margin-left: 10px;
+            height: 30px;
+            width: 30px;
+            background: rgba(0, 124, 182, 0.521);
+            border: none;
+            font-weight: 600;
+            font-size: 20px;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: 0.5;
+        }
+
+        button:hover {
+            background: white;
+            transition: 0.5s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: rgb(156, 172, 13) !important;
+            color: black !important;
+        }
+    </style>
+    <script>
+        function samed(id) {
+            document.getElementById('slider').style.backgroundImage = id;
+        }
+    </script>
+</head>
+
+<body style="margin: 0px">
+    <div style="height: 50px;width: 100%;background: rgba(0, 124, 182, 0.521);">
+        <center>
+            <a style="color:white;font-weight: 600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:35px;">EXAMPLE SLIDER</a>
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <div class="slider" style="margin-bottom:20px;" id="slider">
+                <div class="slidernot" style="padding-top:200px;float:left;padding-left:40px;">
+                    <h1 style="margin:0px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px">YENİ SLİDER YAZISI İLE MUTLU MÜŞTERİ</h1>
+                    <br>
+                    <input type="button" value="CONTACT" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;width: 150px;height: 40px;float:left;">
+                    <input type="button" value="INFO" style="margin-left:10px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;width: 150px;height: 40px;float:left;">
+                </div>
+            </div>
+            <br>
+            <button id="sa1" style="margin-top:15px;" onclick="samed('url(BG.png)')">1</button>
+            <button id="sa2" style="margin-top:15px;" onclick="samed('url(z.jpg)')">2</button>
+            <button id="sa3" style="margin-top:15px;margin-bottom: 15px;" onclick="samed('url(BG.png)')">3</button>
+            <br>
+            <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;">karakusnavy@gmail.com</a>
+            <br>
+            <div style="margin-top:15px;">
+                <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://github.com/karakusnavy">GITHUB</a>
+                <a style="margin:0px;color:white;background: rgb(6, 0, 97);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://github.com/karakusnavy">karakusnavy</a>
+            </div>
+            <div style="margin-top:15px;">
+                <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://twitter.com/karakusnavy">TWITTER</a>
+                <a style="margin:0px;color:white;background: rgb(6, 0, 97);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://twitter.com/karakusnavy">karakusnavy</a>
+            </div>
+            <div style="margin-top:15px;">
+                <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://facebook.com/karakusnavy">FACEBOOK</a>
+                <a style="margin:0px;color:white;background: rgb(6, 0, 97);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://facebook.com/karakusnavy">karakusnavy</a>
+            </div>
+            <div style="margin-top:15px;">
+                <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://instagram.com/karakusnavy">INSTAGRAM</a>
+                <a style="margin:0px;color:white;background: rgb(6, 0, 97);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://instagram.com/karakusnavy">karakusnavy</a>
+            </div>
+            <div style="margin-top:15px;">
+                <a style="margin:0px;color:white;background: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://medium.com/@karakusnavy">MEDIUM</a>
+                <a style="margin:0px;color:white;background: rgb(6, 0, 97);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;padding:5px 10px 5px 10px;"
+                    href="https://medium.com/@karakusnavy">karakusnavy</a>
+            </div>
+
+        </center>
+    </div>
+</body>
+
+</html>
